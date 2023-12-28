@@ -13,12 +13,15 @@ pydantic = "^2.5.3"
 requests = "^2.31.0"
 mail-parser = "^3.15.0"
 urlextract = "^1.8.0"
+tqdm = "^4.66.1"
+sqlalchemy = "^2.0.24"
 
 [tool.poetry.group.dev.dependencies]
 datamodel-code-generator = "^0.21.3"
 mypy = "^1.4.1"
 types-requests = "^2.31.0.2"
 docker = "^7.0.0"
+types-tqdm = "^4.66.0.5"
 
 [build-system]
 requires = ["poetry-core"]
