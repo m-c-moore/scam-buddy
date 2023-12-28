@@ -12,6 +12,7 @@ python-dotenv = "^1.0.0"
 pydantic = "^2.5.3"
 requests = "^2.31.0"
 mail-parser = "^3.15.0"
+urlextract = "^1.8.0"
 
 [tool.poetry.group.dev.dependencies]
 datamodel-code-generator = "^0.21.3"
