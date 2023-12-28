@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "scam-buddy"
+version = "0.1.0"
+description = ""
+authors = ["Matt Moore <m-c-moore@outlook.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.108.0"
+python-dotenv = "^1.0.0"
+pydantic = "^2.5.3"
+requests = "^2.31.0"
+mail-parser = "^3.15.0"
+
+[tool.poetry.group.dev.dependencies]
+datamodel-code-generator = "^0.21.3"
+mypy = "^1.4.1"
+types-requests = "^2.31.0.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

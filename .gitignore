@@ -1,0 +1,20 @@
+# Private
+.env
+data/
+server/integrations/**/swagger.json
+
+# IDEs
+.idea
+.vscode
+
+# Python
+.venv
+.mypy_cache
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+# JavaScript
+node_modules/
+*.log

@@ -1,0 +1,50 @@
+select = [
+  # other linters
+  "E",  # pycodestyle
+  "F",  # Pyflakes
+  "I",  # isort
+  "UP",  # pyupgrade
+  "N",  # pep8-naming
+  "D",  # pydocstyle
+  "PD",  # pandas-vet
+  "PGH",  # pygrep-hooks
+  # flake8 + plugins
+  "S",  # flake8-bandit
+  "B",  # flake8-bugbear
+  "BLE",  # flake8-blind-except
+  "A",  # flake8-builtins
+  "COM",  # flake8-commas
+  "C4",  # flake8-comprehensions
+  "ISC",  # flake8-implicit-str-concat
+  "ICN",  # flake8-import-conventions
+  "G",  # flake8-logging-format
+  "PIE",  # flake8-pie
+  "T20",  # flake8-print
+  "PT",  # flake8-pytest-style
+  "SLF",  # flake8-self
+  "SIM",  # flake8-simplify
+  "TID",  # flake8-tidy-imports
+  "ARG",  # flake8-unused-arguments
+  # ruff rules
+  "RUF",  # ruff-specific rules
+  "NPY",  # NumPy-specific rules
+]
+target-version = "py311"
+show-fixes = true
+
+ignore = [
+  "D10", # missing docstring
+  "E501", # max line length
+  "RUF001", # string contains ambigious character
+  "A003", # class attribute shadowing builtin
+]
+
+[per-file-ignores]
+"**/test_*.py" = [
+  "ARG001", # unused argument
+  "S101", # use of `assert`
+  "PT004", # fixture with no return
+]
+
+[pydocstyle]
+convention = "numpy" # https://numpydoc.readthedocs.io/en/latest/format.html
